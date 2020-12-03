@@ -1,0 +1,10 @@
+create database administration;
+use administration;
+create table users(
+id int unsigned NOT NULL auto_increment primary key,
+ name varchar(100) not null,
+ password varchar(20) not null,
+ phone varchar(11)
+ );
+ 
+ insert into users(name, password, phone) values("Marco Ruiz", "12345", "3311713592");
